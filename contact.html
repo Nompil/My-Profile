@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Get in touch with Nompilo Eugenia Mchunu for collaboration or opportunities in AI and software development." />
+  <meta name="keywords" content="Nompilo Eugenia Mchunu, contact, AI, software development, cybersecurity, cloud computing" />
+  <meta property="og:title" content="Nompilo Eugenia Mchunu | Contact" />
+  <meta property="og:description" content="Connect with Nompilo for professional opportunities in AI, software development, and cybersecurity." />
+  <meta property="og:image" content="/assets/images/profilepict1-optimized.jpeg" />
+  <title>Nompilo Eugenia Mchunu | Contact</title>
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;800&family=Montserrat:wght@400;600&family=Amatic+SC:wght@700&display=swap" as="style" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;800&family=Montserrat:wght@400;600&family=Amatic+SC:wght@700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+  <script defer src="./main.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <div class="brand">
+      <img src="/assets/images/profile.jpeg" alt="Nompilo Mchunu Logo" class="brand-logo" loading="lazy" />
+      <span class="brand-name">Nompilo.dev</span>
+    </div>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="site-nav">
+      <span class="visually-hidden">Menu</span><span></span><span></span><span></span>
+    </button>
+    <nav id="site-nav" class="site-nav">
+      <a href="./index.html">Home</a>
+      <a href="./about.html">About</a>
+      <a href="./projects.html">Projects</a>
+      <a href="./skills.html">Skills</a>
+      <a href="./services.html">Services</a>
+      <a class="active" href="./contact.html">Contact</a>
+    </nav>
+  </header>
+  <main id="main" class="main-content">
+    <section class="contact-page" aria-labelledby="contact-heading">
+      <h1 id="contact-heading" class="section-title">Get in Touch</h1>
+      <p class="section-intro">I’d love to hear from you! Whether it’s a collaboration, job opportunity, or tech discussion, feel free to reach out.</p>
+      <div class="contact-wrap">
+        <form class="contact-form" action="https://formspree.io/f/xovlgkod" method="POST">
+          <input type="hidden" name="_next" value="/thank-you.html" />
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required placeholder="Your Name" aria-describedby="form-hint" />
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="your@email.com" aria-describedby="form-hint" />
+          </div>
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required placeholder="Your Message" aria-describedby="form-hint"></textarea>
+          </div>
+          <div class="form-row">
+            <button type="submit" class="btn btn-primary btn-glow">Send Message</button>
+            <p id="form-hint" class="form-hint">We’ll get back to you within 48 hours.</p>
+          </div>
+          <div class="thanks hide">Thank you! We’ll be in touch soon.</div>
+        </form>
+        <aside class="contact-aside">
+          <h3>Contact Details</h3>
+          <ul class="contact-links">
+            <li><i class="fas fa-phone" aria-hidden="true"></i> <a href="tel:+270714023825">(071) 402-3825</a></li>
+            <li><i class="fas fa-envelope" aria-hidden="true"></i> <a href="mailto:nompilomabuya@gmail.com">nompilomabuya@gmail.com</a></li>
+            <li><i class="fas fa-map-marker-alt" aria-hidden="true"></i> 27 Liebenberg Rd, Noordwyk, Midrand 1685</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <nav class="footer-nav">
+      <a href="./index.html">Home</a>
+      <a href="./about.html">About</a>
+      <a href="./projects.html">Projects</a>
+      <a href="./skills.html">Skills</a>
+      <a href="./services.html">Services</a>
+      <a href="./contact.html">Contact</a>
+    </nav>
+    <p>© 2025 Nompilo Eugenia Mchunu | 
+      <a href="mailto:nompilomabuya@gmail.com">nompilomabuya@gmail.com</a> | 
+      Currently part of the <a href="https://www.capaciti.org.za" target="_blank" rel="noopener noreferrer">CAPACITI Digital Skills Programme</a> | 
+      Built with ❤️ | <span id="current-date"></span></p>
+  </footer>
+</body>
+</html>
