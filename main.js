@@ -1,77 +1,110 @@
-document.addEventListener('DOMContentLoaded', () => {
-  // Navigation Toggle
-  const navToggle = document.querySelector('.nav-toggle');
-  const nav = document.querySelector('.site-nav');
-  if (navToggle && nav) {
-    navToggle.addEventListener('click', () => {
-      const isExpanded = navToggle.getAttribute('aria-expanded') === 'true';
-      navToggle.setAttribute('aria-expanded', !isExpanded);
-      nav.classList.toggle('open');
-    });
-  }
+// Navigation Toggle
+const navToggle = document.querySelector('.nav-toggle');
+const siteNav = document.querySelector('#site-nav');
 
-  // Form Submission Feedback
-  const form = document.querySelector('.contact-form');
-  if (form) {
-    form.addEventListener('submit', async (e) => {
-      try {
-        const thanks = document.querySelector('.thanks');
-        if (thanks) {
-          thanks.classList.remove('hide');
-          form.reset();
-          setTimeout(() => thanks.classList.add('hide'), 5000);
-        }
-      } catch (error) {
-        console.error('Form submission error:', error);
-        const thanks = document.querySelector('.thanks');
-        if (thanks) {
-          thanks.textContent = 'Error submitting form. Please try again.';
-          thanks.classList.remove('hide');
-          setTimeout(() => thanks.classList.add('hide'), 5000);
-        }
-      }
-    });
-  }
-
-  // Dynamic Timestamp
-  const dateSpan = document.getElementById('current-date');
-  if (dateSpan) {
-    dateSpan.textContent = new Date().toLocaleString('en-ZA', {
-      timeZone: 'Africa/Johannesburg',
-      dateStyle: 'long',
-      timeStyle: 'short'
-    });
-  }
-
-  // Fade-in Animations for Skills and About Pages
-  const fadeElements = document.querySelectorAll('.fade-in');
-  if (fadeElements.length > 0) {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-            observer.unobserve(entry.target);
-          }
-        });
-      },
-      { threshold: 0.2 }
-    );
-    fadeElements.forEach((el) => observer.observe(el));
-  }
+navToggle.addEventListener('click', () => {
+  const isExpanded = navToggle.getAttribute('aria-expanded') === 'true';
+  navToggle.setAttribute('aria-expanded', !isExpanded);
+  siteNav.classList.toggle('active');
 });
 
-// Add CSS for fade-in animations
-const style = document.createElement('style');
-style.textContent = `
-  .fade-in {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+// Testimonial Carousel
+const testimonialWrapper = document.querySelector('.testimonial-wrapper');
+const testimonialItems = document.querySelectorAll('.testimonial-item');
+const prevButton = document.querySelector('.carousel-prev');
+const nextButton = document.querySelector('.carousel-next');
+let currentIndex = 0;
+
+function showTestimonial(index) {
+  testimonialItems.forEach((item, i) => {
+    item.classList.toggle('active', i === index);
+    testimonialWrapper.style.transform = `translateX(-${index * 100}%)`;
+  });
+}
+
+function nextTestimonial() {
+  currentIndex = (currentIndex + 1) % testimonialItems.length;
+  showTestimonial(currentIndex);
+}
+
+function prevTestimonial() {
+  currentIndex = (currentIndex - 1 + testimonialItems.length) % testimonialItems.length;
+  showTestimonial(currentIndex);
+}
+
+// Auto-slide every 5 seconds
+let autoSlide = setInterval(nextTestimonial, 5000);
+
+// Button event listeners
+nextButton.addEventListener('click', () => {
+  clearInterval(autoSlide);
+  nextTestimonial();
+  autoSlide = setInterval(nextTestimonial, 5000);
+});
+
+prevButton.addEventListener('click', () => {
+  clearInterval(autoSlide);
+  prevTestimonial();
+  autoSlide = setInterval(nextTestimonial, 5000);
+});
+
+// Initialize first testimonial
+showTestimonial(currentIndex);
+
+// Particle Animation
+const canvas = document.getElementById('particle-canvas');
+const ctx = canvas.getContext('2d');
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
+const particlesArray = [];
+const numberOfParticles = 100;
+
+class Particle {
+  constructor() {
+    this.x = Math.random() * canvas.width;
+    this.y = Math.random() * canvas.height;
+    this.size = Math.random() * 5 + 1;
+    this.speedX = Math.random() * 3 - 1.5;
+    this.speedY = Math.random() * 3 - 1.5;
   }
-  .fade-in.visible {
-    opacity: 1;
-    transform: translateY(0);
+  update() {
+    this.x += this.speedX;
+    this.y += this.speedY;
+    if (this.size > 0.2) this.size -= 0.1;
   }
-`;
-document.head.appendChild(style);
+  draw() {
+    ctx.fillStyle = 'rgba(255, 140, 122, 0.8)'; // Coral
+    ctx.beginPath();
+    ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+    ctx.fill();
+  }
+}
+
+function initParticles() {
+  for (let i = 0; i < numberOfParticles; i++) {
+    particlesArray.push(new Particle());
+  }
+}
+
+function animateParticles() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  for (let i = 0; i < particlesArray.length; i++) {
+    particlesArray[i].update();
+    particlesArray[i].draw();
+    if (particlesArray[i].size <= 0.2) {
+      particlesArray.splice(i, 1);
+      i--;
+      particlesArray.push(new Particle());
+    }
+  }
+  requestAnimationFrame(animateParticles);
+}
+
+initParticles();
+animateParticles();
+
+window.addEventListener('resize', () => {
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+});
