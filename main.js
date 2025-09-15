@@ -59,6 +59,30 @@ document.addEventListener('DOMContentLoaded', () => {
     );
     fadeElements.forEach((el) => observer.observe(el));
   }
+
+  // Testimonial Carousel
+  const testimonialItems = document.querySelectorAll('.testimonial-item');
+  const totalTestimonials = testimonialItems.length;
+  let currentTestimonial = 0;
+
+  if (testimonialItems.length > 0) {
+    const showTestimonial = (index) => {
+      testimonialItems.forEach((item, i) => {
+        item.classList.toggle('active', i === index);
+      });
+    };
+
+    const nextTestimonial = () => {
+      currentTestimonial = (currentTestimonial + 1) % totalTestimonials;
+      showTestimonial(currentTestimonial);
+    };
+
+    // Initialize the first testimonial
+    showTestimonial(currentTestimonial);
+
+    // Cycle through testimonials every 5 seconds
+    setInterval(nextTestimonial, 5000);
+  }
 });
 
 // Add CSS for fade-in animations
