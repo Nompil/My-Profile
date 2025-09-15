@@ -1,5 +1,156 @@
 // Navigation Toggle
 const navToggle = document.querySelector('.nav-toggle');
+const nav = document.querySelector('.site-nav');
+
+navToggle.addEventListener('click', () => {
+  const isExpanded = navToggle.getAttribute('aria-expanded') === 'true';
+  navToggle.setAttribute('aria-expanded', !isExpanded);
+  nav.classList.toggle('open');
+  document.querySelector('.site-header').classList.toggle('open');
+});
+
+// Intersection Observer for Animations
+const observerOptions = {
+  root: null,
+  threshold: 0.1,
+};
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry, index) => {
+    if (entry.isIntersecting) {
+      setTimeout(() => {
+        entry.target.classList.add('fade-in');
+      }, index * 200);
+    }
+  });
+}, observerOptions);
+
+document.querySelectorAll('.journey-card, .project-card, .project-item, .skill-chip').forEach((item) => {
+  observer.observe(item);
+});
+
+// Particle Animation for Hero
+const canvas = document.getElementById('particle-canvas');
+if (canvas) {
+  const ctx = canvas.getContext('2d');
+  canvas.width = window.innerWidth;
+  canvas.height = canvas.parentElement.offsetHeight;
+
+  const particles = [];
+  const particleCount = 60;
+
+  class Particle {
+    constructor() {
+      this.x = Math.random() * canvas.width;
+      this.y = Math.random() * canvas.height;
+      this.size = Math.random() * 4 + 1;
+      this.speedX = Math.random() * 1.5 - 0.75;
+      this.speedY = Math.random() * 1.5 - 0.75;
+    }
+    update() {
+      this.x += this.speedX;
+      this.y += this.speedY;
+      if (this.size > 0.2) this.size -= 0.015;
+      if (this.x < 0 || this.x > canvas.width) this.speedX *= -1;
+      if (this.y < 0 || this.y > canvas.height) this.speedY *= -1;
+    }
+    draw() {
+      ctx.fillStyle = 'rgba(255, 255, 255, 0.8)';
+      ctx.beginPath();
+      ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+      ctx.fill();
+    }
+  }
+
+  function initParticles() {
+    for (let i = 0; i < particleCount; i++) {
+      particles.push(new Particle());
+    }
+  }
+
+  function animateParticles() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    particles.forEach((particle, index) => {
+      particle.update();
+      particle.draw();
+      if (particle.size <= 0.2) {
+        particles.splice(index, 1);
+        particles.push(new Particle());
+      }
+    });
+    requestAnimationFrame(animateParticles);
+  }
+
+  initParticles();
+  animateParticles();
+
+  window.addEventListener('resize', () => {
+    canvas.width = window.innerWidth;
+    canvas.height = canvas.parentElement.offsetHeight;
+  });
+}
+
+// Testimonial Carousel
+const testimonials = document.querySelectorAll('.testimonial-item');
+let currentTestimonial = 0;
+
+function showTestimonial(index) {
+  testimonials.forEach((item, i) => {
+    item.classList.toggle('active', i === index);
+  });
+}
+
+function nextTestimonial() {
+  currentTestimonial = (currentTestimonial + 1) % testimonials.length;
+  showTestimonial(currentTestimonial);
+}
+
+if (testimonials.length > 0) {
+  showTestimonial(currentTestimonial);
+  setInterval(nextTestimonial, 5000);
+}
+
+// Form Handling (Contact Page)
+const contactForm = document.querySelector('#contact-form');
+if (contactForm) {
+  contactForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const thanks = document.querySelector('.thanks');
+    const formData = new FormData(contactForm);
+    try {
+      const response = await fetch('https://formspree.io/f/YOUR-FORM-ID-HERE', {
+        method: 'POST',
+        body: formData,
+        headers: { 'Accept': 'application/json' },
+      });
+      if (response.ok) {
+        thanks.classList.remove('hide');
+        contactForm.reset();
+        setTimeout(() => thanks.classList.add('hide'), 5000);
+      } else {
+        alert('Form submission failed. Please try again.');
+      }
+    } catch (error) {
+      alert('An error occurred. Please try again.');
+    }
+  });
+}
+
+// Dynamic Date
+const dateElement = document.getElementById('current-date');
+if (dateElement) {
+  const now = new Date();
+  dateElement.textContent = now.toLocaleString('en-US', {
+    month: 'long',
+    day: 'numeric',
+    year: 'numeric',
+    hour: 'numeric',
+    minute: 'numeric',
+    hour12: true,
+    timeZone: 'Africa/Johannesburg',
+  }) + ' SAST';
+}// Navigation Toggle
+const navToggle = document.querySelector('.nav-toggle');
 const siteNav = document.querySelector('#site-nav');
 
 navToggle.addEventListener('click', () => {
