@@ -776,9 +776,18 @@ section {
 
 .journey-card {
   display: grid;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: 42px minmax(0, 1fr);
   gap: 0.8rem 1rem;
   align-items: start;
+}
+
+.journey-card h3 {
+  align-self: center;
+  margin-bottom: 0;
+}
+
+.journey-card p {
+  grid-column: 1 / -1;
 }
 
 .journey-icon {
