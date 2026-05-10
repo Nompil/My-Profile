@@ -1,111 +1,62 @@
-# Nompilo Mchunu Portfolio
+# Nompilo Mchunu Profile
 
-![Portfolio Screenshot](assets/images/portfolio-screenshot.png)
+This is the recruiter-facing profile site for **Nompilo Eugenia Mchunu**, aligned with the current Word CVs in this project.
 
-Welcome to my portfolio website, my capstone project for the **CAPACITI AI Bootcamp** (September 2025). This project showcases my expertise in software development, AI, and cybersecurity through a responsive, accessible, and visually engaging web application. Explore my work at [https://nompil.github.io/My-Profile/](https://nompil.github.io/My-Profile/) or browse the code in this repository: [https://github.com/Nompil/My-Profile](https://github.com/Nompil/My-Profile).
+Live profile: <https://nompil.github.io/My-Profile/>
 
-## Table of Contents
-- [About the Project](#about-the-project)
-- [Features](#features)
-- [Technologies](#technologies)
-- [Setup](#setup)
-- [Deployment](#deployment)
-- [File Structure](#file-structure)
-- [Future Improvements](#future-improvements)
-- [License](#license)
-- [Contact](#contact)
-- [Acknowledgments](#acknowledgments)
+## Positioning
 
-## About the Project
-This portfolio website, developed as my CAPACITI AI Bootcamp capstone, serves as a digital showcase of my technical skills, projects, and professional journey. As an IT graduate from Tshwane University of Technology, I’ve built this site with HTML, CSS, and JavaScript to highlight my capabilities in creating user-focused, accessible web applications. The portfolio features my CAPACITI capstone and my university final-year project, a Sign Language Translation System, demonstrating my commitment to impactful and inclusive technology.
+Nompilo is positioned as a Systems Analyst and Full-Stack Developer who can bridge business requirements and technical execution. The site highlights readiness for:
 
-### Key Highlights
-- **CAPACITI Capstone**: A responsive portfolio website with a testimonial carousel, particle animations, and accessibility features.
-- **University Project**: A Sign Language Translation System using JavaScript, Ionic, MySQL, and TensorFlow.js to enhance communication for deaf communities.
-- **Professional Focus**: Blending software development, AI, and cybersecurity with Google and Cisco certifications.
+- Systems Analyst, Junior Business Analyst, Technical Business Analyst and Solutions Analyst roles
+- Junior Full-Stack, Backend and Software Developer roles
+- QA Analyst, IT Support Analyst, Junior Cybersecurity Analyst, BI Developer and Data Analyst roles
 
-## Features
-- **Responsive Design**: Adapts to mobile (≤768px, ≤480px) and desktop devices using CSS Flexbox, Grid, and media queries.
-- **Testimonial Carousel**: Displays feedback from ICEP Mentors and African Bank Manager, with auto-slide (every 5 seconds) and manual navigation buttons.
-- **Interactive Navigation**: Includes `Home`, `About`, `Projects`, `Skills`, `Services`, and `Contact` links, with a mobile-friendly toggle menu.
-- **Particle Animation**: JavaScript-powered canvas animation in the hero section for visual engagement.
-- **Accessibility**: Implements `skip-link`, `aria-labels`, and screen-reader-friendly navigation for inclusivity.
-- **Form Submission**: Contact form integrated with Formspree (`xovlgkod`) for seamless communication.
-- **SEO Optimization**: Includes meta tags for description, keywords, and Open Graph for better search visibility.
-- **Featured Projects**: Showcases the portfolio website and Sign Language System with links to learn more (`https://nompil.github.io/My-Profile/`) or explore further (`projects.html`).
+## Profile Evidence
 
-## Technologies
-- **Frontend**:
-  - HTML5
-  - CSS3 (Flexbox, Grid, animations)
-  - JavaScript (vanilla, for navigation, carousel, and particle effects)
-- **Fonts**:
-  - Playfair Display (titles)
-  - Montserrat (body)
-  - Amatic SC (accents)
-- **Icons**: Font Awesome 6.5.0
-- **Analytics**: Google Analytics (placeholder ID: `G-XXXXXXXXXX`)
-- **Form Handling**: Formspree (`https://formspree.io/f/xovlgkod`)
-- **Other Skills Showcased**:
-  - Software Development: C++, Python, React.js, Node.js
-  - AI & Data: Jupyter Notebooks, TensorFlow.js
-  - Cybersecurity: Google Cybersecurity Certificate, Cisco Introduction to Cybersecurity
-  - Business Analysis: Agile methodologies, Microsoft Visio
+- 100+ critical issues identified during a live platform audit
+- TrustCircle fintech platform built and deployed with 350+ passing automated tests
+- 500+ 3G, 4G and LTE SIM cards administered in a banking environment
+- AWS, Power BI, cybersecurity, IT support and full-stack development experience
+- 9 certifications across Azure, cybersecurity, IT support, project management and systems administration
+- Personal principle: "Dreams delayed are not dreams denied."
+- Evidence-grounded "Ask My Portfolio" assistant for recruiter questions
 
-## Setup
-To run the portfolio locally, follow these steps:
+## Portfolio Structure
 
-1. **Clone the Repository**:
-   ```bash
-   git clone https://github.com/Nompil/My-Profile.git
-   cd My-Profile
-   
-DeploymentThe portfolio is live at https://nompil.github.io/My-Profile/, deployed using GitHub Pages.
-File Structure
+- `index.html`: recruiter-facing landing page with immediate proof points and Ask My Portfolio assistant
+- `projects.html`: case studies for TrustCircle, InspHired audit, African Bank SOP redesign and BI reporting
+- `cv.html`: recent Word CV, ATS version, role fit and supported feedback
+- `skills.html`: technical capabilities and certifications
+- `about.html`: professional context and work style
+- `contact.html`: direct hiring contact details
 
-My-Profile/
-├── assets/
-│   ├── images/
-│   │   ├── profile.jpeg                # Logo for header
-│   │   ├── profilepict1-optimized.jpeg # Optional profile picture
-│   │   ├── portfolio-screenshot.png    # README screenshot
-│   ├── documents/
-│   │   ├── Nompilo_Mchunu_CV.pdf      # CV download
-├── index.html                         # Homepage
-├── about.html                         # About page
-├── projects.html                      # Projects page
-├── skills.html                        # Skills page
-├── services.html                      # Services page
-├── contact.html                       # Contact page
-├── style.css                          # Stylesheet
-├── main.js                            # JavaScript for interactivity
-├── favicon.ico                        # Favicon
-├── LICENSE                            # MIT License
-├── README.md                          # This file
+## Files
 
-**Future Improvements**
--Add more projects to projects.html, such as React or Node.js applications.
--Implement advanced animations using GSAP or Three.js for enhanced visuals.
--Integrate a backend (e.g., Node.js, Express) for dynamic content or a blog.
--Enhance accessibility with keyboard navigation for the testimonial carousel.
--Optimize performance with lazy-loaded images, minified CSS/JS, and CDN hosting.
--Add unit tests for JavaScript functionality (e.g., carousel, navigation toggle).
+```text
+Myprofile/
+|-- index.html
+|-- about.html
+|-- projects.html
+|-- skills.html
+|-- cv.html
+|-- contact.html
+|-- style.css
+|-- main.js
+|-- profile.jpeg
+|-- NE Mchunu CV.docx
+`-- NE Mchunu CV ATS.docx
+```
 
-LicenseThis project is licensed under the MIT License. See the LICENSE file for details.ContactI’m excited to collaborate on innovative projects or discuss opportunities in software development, AI, or cybersecurity. Reach out via:Email: nompilomabuya@gmail.com (mailto:nompilomabuya@gmail.com)
+## Local Preview and Deployment
 
-**LinkedIn:** linkedin.com/in/nompilo-mchunu
-**GitHub:** github.com/Nompil
-**Twitter/X:** x.com/nompilomabuya
-**Slack:** masikhulesolutions.slack.com/team/U09EDC5NKFD
-**Discord:** discord.com/users/1413167513264586893
-**Portfolio:** https://nompil.github.io/My-Profile/
+Open `index.html` in a browser. The site is static and does not require a build step.
 
-**AcknowledgmentsCAPACITI AI Bootcamp:** For providing advanced training in web development and AI.
-**Tshwane University of Technology:** For my foundational IT education and support on my final-year project.
-**ICEP Mentors & African Bank:** For their invaluable feedback and professional guidance.
-**Font Awesome:** For icons used across the site.
-**Google Fonts:** For Playfair Display, Montserrat, and Amatic SC fonts.
-**Formspree:** For reliable contact form integration.
+The portfolio is GitHub Pages-ready because it uses static HTML, CSS, JavaScript and local assets only. To publish updates, push these files to the GitHub repository connected to the live profile and make sure GitHub Pages is serving the main branch or selected deployment branch.
 
+## Contact
 
-
+- Email: <nompilomabuya@gmail.com>
+- Phone: 071 402 3825
+- LinkedIn: <https://linkedin.com/in/nompilo-eugenia-mchunu-2385a763>
+- GitHub: <https://github.com/Nompil>

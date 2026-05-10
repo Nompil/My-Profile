@@ -3,21 +3,23 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Nompilo Eugenia Mchunu’s CAPACITI bootcamp projects, featuring live demos and standardized documentation in AI/ML, cybersecurity, and UI/UX design." />
-  <meta name="keywords" content="Nompilo Eugenia Mchunu, projects, AI/ML, cybersecurity, CAPACITI, Bias Audit, AI Study Buddy, Sentiment Analysis, Smart Irrigation Scheduler, UI/UX" />
-  <title>Nompilo Eugenia Mchunu | Projects</title>
-  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;800&family=Montserrat:wght@400;600&family=Amatic+SC:wght@700&display=swap" as="style" />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;800&family=Montserrat:wght@400;600&family=Amatic+SC:wght@700&display=swap" rel="stylesheet" />
+  <meta name="description" content="Case studies for Nompilo Eugenia Mchunu, showing systems analysis, full-stack delivery, QA, banking support process improvement and BI reporting outcomes." />
+  <meta name="keywords" content="Nompilo Eugenia Mchunu, case studies, TrustCircle, InspHired audit, African Bank SOP, Power BI reporting, systems analysis" />
+  <meta property="og:title" content="Nompilo Eugenia Mchunu | Case Studies" />
+  <meta property="og:description" content="Four outcome-focused case studies showing how Nompilo analyses, documents, builds, tests and improves systems." />
+  <meta property="og:image" content="profile.jpeg" />
+  <title>Nompilo Eugenia Mchunu | Case Studies</title>
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" as="style" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link rel="stylesheet" href="./style.css" />
-  <link rel="icon" href="./favicon.ico" type="image/x-icon" />
   <script defer src="./main.js"></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to main content</a>
   <header class="site-header">
     <div class="brand">
-      <img src="profile.jpeg" alt="Nompilo Mchunu Logo" class="brand-logo" />
+      <img src="profile.jpeg" alt="Nompilo Mchunu" class="brand-logo" />
       <span class="brand-name">Nompilo.dev</span>
     </div>
     <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="site-nav">
@@ -26,48 +28,142 @@
     <nav id="site-nav" class="site-nav">
       <a href="./index.html">Home</a>
       <a href="./about.html">About</a>
-      <a class="active" href="./projects.html">Projects</a>
+      <a class="active" href="./projects.html">Case Studies</a>
       <a href="./skills.html">Skills</a>
-      <a href="./services.html">Services</a>
+      <a href="./cv.html">CV</a>
       <a href="./contact.html">Contact</a>
     </nav>
   </header>
+
   <main id="main" class="main-content">
-    <section class="projects-section" aria-labelledby="project-heading">
-      <h2 id="project-heading" class="section-title">Featured Projects</h2>
-      <div class="project-grid" role="list">
-        <div class="project-card" role="listitem">
-          <h3>Bias Audit Report</h3>
-          <p>A comprehensive audit of bias in AI systems, deployed to enhance fairness in machine learning models. <a href="https://nompil.github.io/Bias-Audit-Report-SA/" target="_blank">Live Demo</a> | <a href="https://github.com/Nompil/Bias-Audit-Report-SA.git" target="_blank">GitHub</a></p>
+    <section class="projects-section" aria-labelledby="case-heading">
+      <h1 id="case-heading" class="section-title">Case Studies</h1>
+      <p class="section-intro">
+        Each case study is structured around context, decision-making, implementation and measurable outcome, so employers can see how I think as well as what I build.
+      </p>
+
+      <article class="case-study" id="trustcircle">
+        <div class="case-header">
+          <p class="project-meta">Full-stack delivery | Fintech workflow | AWS deployment</p>
+          <h2>TrustCircle: turning lending rules into a working platform</h2>
         </div>
-        <div class="project-card" role="listitem">
-          <h3>AI Study Buddy</h3>
-          <p>An AI-powered tool designed to assist with learning, featuring interactive study support. <a href="https://ai-study-buddy-701021958461.us-west1.run.app/" target="_blank">Live Demo</a> | <a href="https://github.com/Nompil/ai-study-buddy" target="_blank">GitHub</a></p>
+        <div class="case-layout">
+          <div class="case-copy">
+            <p><strong>Context:</strong> TrustCircle needed more than screens. The platform required lending rules, user roles, loan workflows, payment handling, audit-friendly data and an admin view that made operational sense.</p>
+            <p><strong>My role:</strong> I designed the system architecture, data models, workflow logic and business rules before building the Node.js backend, React frontend and PostgreSQL schema.</p>
+            <p><strong>Outcome:</strong> The platform was deployed live on AWS with PayFast ITN handling, JWT authentication, role-based access control and an admin analytics dashboard.</p>
+            <ul class="metric-list">
+              <li>350+ automated tests with a 100% pass rate</li>
+              <li>AWS Elastic Beanstalk, RDS, S3, CloudFront and Route 53</li>
+              <li>Redis, BullMQ, SSL/TLS, bcrypt and JWT used in the delivery</li>
+            </ul>
+            <a href="https://trustcircle.co.za" target="_blank" rel="noopener noreferrer">View live platform</a>
+          </div>
+          <div class="evidence-visual" aria-label="TrustCircle architecture visual">
+            <div class="visual-title">Delivery Map</div>
+            <div class="flow-row"><span>Business rules</span><i class="fas fa-arrow-right"></i><span>Data model</span></div>
+            <div class="flow-row"><span>Loan workflow</span><i class="fas fa-arrow-right"></i><span>Payment events</span></div>
+            <div class="flow-row"><span>Admin reporting</span><i class="fas fa-arrow-right"></i><span>AWS release</span></div>
+            <div class="visual-metric">350+ tests passing</div>
+          </div>
         </div>
-        <div class="project-card" role="listitem">
-          <h3>Sentiment Analysis Dashboard</h3>
-          <p>A dashboard visualizing sentiment analysis results, developed collaboratively to analyze text data. <a href="https://skelletor147.github.io/sentimental-analysis/" target="_blank">Live Demo</a> | <a href="https://github.com/skelletor147/sentimental-analysis-dashboard" target="_blank">GitHub</a></p>
+      </article>
+
+      <article class="case-study" id="audit">
+        <div class="case-header">
+          <p class="project-meta">Systems analysis | Production audit | Remediation roadmap</p>
+          <h2>InspHired Worx: finding the risks nobody had documented</h2>
         </div>
-        <div class="project-card" role="listitem">
-          <h3>Smart Irrigation Scheduler</h3>
-          <p>A Figma-based UI/UX design prototype for optimizing irrigation planning in water-scarce regions like South Africa, featuring crop selection, weather integration, soil moisture monitoring, and water conservation tools. <a href="https://start-pastel-91876766.figma.site" target="_blank">Live Demo (Figma Prototype)</a> | <a href="https://github.com/Nompil/Smart-Irrigation-Scheduler" target="_blank">GitHub</a></p>
+        <div class="case-layout">
+          <div class="case-copy">
+            <p><strong>Context:</strong> A live multi-tenant PHP/Laravel platform had security, workflow, data and architecture risks that were affecting confidence in the system.</p>
+            <p><strong>My role:</strong> I worked through the platform without a prepared audit framework, mapped the flows, documented expected business rules and classified findings by severity and recommended fix.</p>
+            <p><strong>Outcome:</strong> The development team received its first structured improvement roadmap, written in language both technical and non-technical stakeholders could act on.</p>
+            <ul class="metric-list">
+              <li>100+ critical issues identified and documented</li>
+              <li>SQL injection exposure, RBAC gaps and cross-tenant leakage flagged</li>
+              <li>Corrected workflows proposed for onboarding, documents and job acceptance</li>
+            </ul>
+            <p class="evidence-note">Sanitized review evidence can be shared on request.</p>
+          </div>
+          <div class="evidence-visual evidence-visual--audit" aria-label="Audit evidence visual">
+            <div class="visual-title">Audit Findings</div>
+            <div class="risk-row"><span>Security</span><strong>Critical</strong></div>
+            <div class="risk-row"><span>Business logic</span><strong>High</strong></div>
+            <div class="risk-row"><span>Data integrity</span><strong>High</strong></div>
+            <div class="risk-row"><span>Architecture</span><strong>High</strong></div>
+            <div class="visual-metric">100+ findings</div>
+          </div>
         </div>
-      </div>
+      </article>
+
+      <article class="case-study" id="african-bank">
+        <div class="case-header">
+          <p class="project-meta">Banking support | Root cause analysis | SOP redesign</p>
+          <h2>African Bank: reducing repeat escalations in a live support process</h2>
+        </div>
+        <div class="case-layout">
+          <div class="case-copy">
+            <p><strong>Context:</strong> Mobile connectivity affected users, branches and ATMs nationwide. Repeated escalations showed that the process itself needed attention, not only individual ticket handling.</p>
+            <p><strong>My role:</strong> I administered 500+ 3G, 4G and LTE SIM cards, diagnosed issues through service-provider portals and Cisco ISE, maintained the master database and helped identify the recurring escalation pattern.</p>
+            <p><strong>Outcome:</strong> I co-authored revised SOPs with my manager. Escalations dropped noticeably within the first month because the corrected process gave teams clearer steps and ownership.</p>
+            <ul class="metric-list">
+              <li>500+ SIM assets administered across users, branches and ATMs</li>
+              <li>3-day SLA environment with ticketing, billing and asset verification</li>
+              <li>Worked across Service Desk, Networking, IT Support, ATM Engineers and vendors</li>
+            </ul>
+          </div>
+          <div class="evidence-visual evidence-visual--process" aria-label="Process improvement visual">
+            <div class="visual-title">Process Fix</div>
+            <div class="process-step">Recurring escalation pattern</div>
+            <div class="process-step">Root cause in SOP</div>
+            <div class="process-step">Redesigned handoff</div>
+            <div class="process-step">Reduced escalations</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="case-study" id="reporting">
+        <div class="case-header">
+          <p class="project-meta">Power BI | SharePoint | Reporting automation</p>
+          <h2>Task reporting: replacing manual tracking with live dashboards</h2>
+        </div>
+        <div class="case-layout">
+          <div class="case-copy">
+            <p><strong>Context:</strong> Weekly and monthly task reporting needed a cleaner way to capture time, status, users and output without repeatedly rebuilding reports by hand.</p>
+            <p><strong>My role:</strong> I designed the SharePoint list structure, connected Power Automate flows and built Power BI dashboards with drill-down views by employee, task and reporting period.</p>
+            <p><strong>Outcome:</strong> Reporting became export-ready, repeatable and easier for management to review without chasing manual updates.</p>
+            <ul class="metric-list">
+              <li>Live dashboards for weekly and monthly views</li>
+              <li>Automated outputs for Excel and PDF reporting</li>
+              <li>KPI tracking by employee, task and status</li>
+            </ul>
+            <p class="evidence-note">Sanitized tracker evidence can be shared on request.</p>
+          </div>
+          <div class="evidence-visual evidence-visual--dashboard" aria-label="Reporting dashboard visual">
+            <div class="visual-title">Dashboard View</div>
+            <div class="dashboard-grid">
+              <span>Hours</span><strong>Live</strong>
+              <span>Tasks</span><strong>Tracked</strong>
+              <span>Status</span><strong>Visible</strong>
+              <span>KPI</span><strong>Monthly</strong>
+            </div>
+          </div>
+        </div>
+      </article>
     </section>
   </main>
+
   <footer class="site-footer">
     <nav class="footer-nav">
       <a href="./index.html">Home</a>
       <a href="./about.html">About</a>
-      <a href="./projects.html">Projects</a>
+      <a href="./projects.html">Case Studies</a>
       <a href="./skills.html">Skills</a>
-      <a href="./services.html">Services</a>
+      <a href="./cv.html">CV</a>
       <a href="./contact.html">Contact</a>
     </nav>
-    <p>© 2025 Nompilo Eugenia Mchunu | 
-      <a href="mailto:nompilomabuya@gmail.com">nompilomabuya@gmail.com</a> | 
-      Currently part of the <a href="https://www.capaciti.org.za" target="_blank">CAPACITI Digital Skills Programme</a> | 
-      Built with ❤️ | <span id="current-date">September 15, 2025, 6:26 PM SAST</span></p>
+    <p>&copy; 2026 Nompilo Eugenia Mchunu | <a href="mailto:nompilomabuya@gmail.com">nompilomabuya@gmail.com</a> | Available immediately | <span id="current-date"></span></p>
   </footer>
 </body>
 </html>
