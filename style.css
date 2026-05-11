@@ -5,7 +5,7 @@
   --muted: #536173;
   --line: #dbe3ea;
   --surface: #ffffff;
-  --surface-alt: #f6f8fb;
+  --surface-alt: #eef3f7;
   --accent: #0f766e;
   --accent-dark: #0b5f59;
   --accent-soft: #d9f0ed;
@@ -475,6 +475,21 @@ section {
   font-weight: 700;
 }
 
+.stack-strip {
+  margin: 0 0 clamp(2rem, 6vw, 4rem);
+  padding: 1.1rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: linear-gradient(135deg, #ffffff 0%, #f3f8fb 100%);
+  box-shadow: var(--shadow-soft);
+}
+
+.stack-strip .chips {
+  justify-content: flex-start;
+  max-width: none;
+  margin-top: 0.8rem;
+}
+
 .principle-strip,
 .personal-context {
   border: 1px solid var(--line);
@@ -757,8 +772,7 @@ section {
 .panel,
 .badge,
 .contact-form,
-.contact-aside,
-.about-text {
+.contact-aside {
   border: 1px solid var(--line);
   border-radius: var(--radius);
   background: var(--surface);
@@ -1148,7 +1162,7 @@ section {
 .about-image {
   width: 100%;
   max-width: 250px;
-  aspect-ratio: 1;
+  aspect-ratio: 4 / 4.6;
   margin: 0 auto;
   border: 1px solid var(--line);
   border-radius: var(--radius);
@@ -1187,8 +1201,10 @@ section {
 }
 
 .about-text {
-  margin: 0 0 0.85rem;
-  padding: 1rem;
+  margin: 0 0 0.9rem;
+  color: var(--text);
+  font-size: 0.98rem;
+  line-height: 1.72;
 }
 
 .project-timeline {
