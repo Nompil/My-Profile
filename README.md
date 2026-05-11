@@ -43,7 +43,8 @@ Myprofile/
 |-- contact.html
 |-- style.css
 |-- main.js
-|-- profile.jpeg
+|-- profile-display.jpg
+|-- profile-thumb.jpg
 |-- NE Mchunu CV.docx
 `-- NE Mchunu CV ATS.docx
 ```
