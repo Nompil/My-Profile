@@ -21,6 +21,7 @@ Nompilo is positioned as a Systems Analyst and Full-Stack Developer who can brid
 - African Bank evidence is described at a high level only because internal banking documents and screenshots are confidential
 - AWS, Power BI, cybersecurity, IT support and full-stack development experience
 - 9 certifications across Azure, cybersecurity, IT support, project management and systems administration, with public certificate links where available
+- PDF certificate evidence is included for Azure AI Engineer Associate, Red Hat RH124 and Cisco Introduction to Cybersecurity
 - Personal principle: "Dreams delayed are not dreams denied."
 - Evidence-grounded "Ask My Portfolio" assistant for recruiter questions
 - Dedicated cybersecurity case study for advanced threat hunting concepts, telemetry mapping and MITRE ATT&CK T1078
@@ -53,6 +54,9 @@ Myprofile/
 |-- main.js
 |-- profile-display.jpg
 |-- profile-thumb.jpg
+|-- certificate-azure-ai-engineer-associate.pdf
+|-- certificate-cisco-introduction-to-cybersecurity.pdf
+|-- certificate-red-hat-rh124.pdf
 |-- NE Mchunu CV.docx
 `-- NE Mchunu CV ATS.docx
 ```
