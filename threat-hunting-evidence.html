@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Sanitized cybersecurity project evidence for Nompilo Eugenia Mchunu, covering threat hunting, MITRE ATT&CK T1078, telemetry mapping and hypothesis-driven analysis." />
+  <meta name="keywords" content="Nompilo Eugenia Mchunu, threat hunting, cybersecurity, MITRE ATT&CK, T1078, telemetry mapping, SOC analyst, cybersecurity analyst" />
+  <meta property="og:title" content="Nompilo Eugenia Mchunu | Threat Hunting Evidence" />
+  <meta property="og:description" content="Recruiter-safe evidence page showing how Nompilo turns attacker behaviour into practical threat hunting questions." />
+  <meta property="og:image" content="profile-display.jpg" />
+  <link rel="icon" href="./profile-thumb.jpg" type="image/jpeg" />
+  <title>Nompilo Eugenia Mchunu | Threat Hunting Evidence</title>
+  <link rel="stylesheet" href="./style.css" />
+  <script defer src="./main.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <div class="brand">
+      <img src="profile-thumb.jpg" alt="Nompilo Mchunu" class="brand-logo" width="42" height="42" decoding="async" />
+      <span class="brand-name">Nompilo.dev</span>
+    </div>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="site-nav">
+      <span class="visually-hidden">Menu</span><span></span><span></span><span></span>
+    </button>
+    <nav id="site-nav" class="site-nav">
+      <a href="./index.html">Home</a>
+      <a href="./about.html">About</a>
+      <a class="active" href="./projects.html">Case Studies</a>
+      <a href="./skills.html">Skills</a>
+      <a href="./cv.html">CV</a>
+      <a href="./contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main id="main" class="main-content">
+    <section class="evidence-page" aria-labelledby="evidence-heading">
+      <div class="evidence-hero">
+        <p class="project-meta">Sanitized project evidence | Cybersecurity | Threat hunting</p>
+        <h1 id="evidence-heading" class="section-title">Advanced Threat Hunting</h1>
+        <p class="section-intro">
+          Turning attacker behaviour into hunt questions, telemetry requirements and practical investigation logic.
+        </p>
+        <div class="evidence-callout">
+          <strong>Recruiter-safe version:</strong> names, class details, internal document metadata and the raw PDF are not published. This page recreates the work in a shareable form.
+        </div>
+      </div>
+
+      <div class="evidence-summary">
+        <article class="artifact-card">
+          <p class="principle-label">Project focus</p>
+          <h2>Threat hunting as proactive analysis</h2>
+          <p>
+            The project explained how threat hunting differs from SOC alert triage, incident response and detection engineering. The emphasis was on asking better questions before an alert exists, then proving or disproving those questions with telemetry.
+          </p>
+        </article>
+        <article class="artifact-card">
+          <p class="principle-label">My contribution</p>
+          <h2>Led the core analysis</h2>
+          <p>
+            I led the work, completed the main research and produced the written deliverable. The strongest part of the work was translating security theory into testable investigation logic that a technical team could use.
+          </p>
+        </article>
+      </div>
+
+      <article class="artifact-card artifact-card--wide">
+        <p class="principle-label">Method</p>
+        <h2>From behaviour to hunt logic</h2>
+        <div class="method-steps" aria-label="Threat hunting method">
+          <div>
+            <span>1</span>
+            <strong>Hypothesis</strong>
+            <p>Define suspicious behaviour in a way that can be tested.</p>
+          </div>
+          <div>
+            <span>2</span>
+            <strong>Telemetry</strong>
+            <p>Map the logs and signals needed to confirm or reject the hypothesis.</p>
+          </div>
+          <div>
+            <span>3</span>
+            <strong>Hunt question</strong>
+            <p>Turn the behaviour into practical questions analysts can investigate.</p>
+          </div>
+          <div>
+            <span>4</span>
+            <strong>Action</strong>
+            <p>Document the result, tune detections and recommend the response path.</p>
+          </div>
+        </div>
+      </article>
+
+      <div class="artifact-grid">
+        <article class="artifact-card">
+          <h2>Key Concepts Covered</h2>
+          <ul class="metric-list">
+            <li>Hypothesis-driven hunting and testable assumptions</li>
+            <li>IOC-based detection compared with TTP-focused hunting</li>
+            <li>Windows Event Logs, Sysmon, DNS logs, proxy logs, EDR process trees and cloud audit logs</li>
+            <li>MITRE ATT&CK T1078: Valid Accounts</li>
+            <li>Cyber Kill Chain critique and behaviour-based hunting</li>
+          </ul>
+        </article>
+
+        <article class="artifact-card">
+          <h2>T1078 Hunt Questions</h2>
+          <ul class="metric-list">
+            <li>Are legitimate accounts logging in outside normal working patterns?</li>
+            <li>Are accounts performing actions beyond their usual role?</li>
+            <li>Are there simultaneous logins from locations that should be impossible?</li>
+            <li>Do privilege changes appear shortly after unusual authentication events?</li>
+          </ul>
+        </article>
+
+        <article class="artifact-card">
+          <h2>Example Query Logic</h2>
+          <ul class="metric-list">
+            <li>Filter successful authentication events outside normal hours.</li>
+            <li>Group account activity within short time windows to detect impossible travel or unusual user-agent changes.</li>
+            <li>Correlate authentication events with sensitive resource access or privilege changes.</li>
+            <li>Reduce false positives with user baselines, VPN allowlists and multi-signal correlation.</li>
+          </ul>
+        </article>
+
+        <article class="artifact-card">
+          <h2>Recruiter Takeaway</h2>
+          <p>
+            This project shows cybersecurity reasoning, analytical writing, MITRE ATT&CK literacy and the ability to translate attacker behaviour into structured investigation work. It supports junior cybersecurity analyst, SOC analyst, QA analyst and systems analyst roles where security awareness matters.
+          </p>
+        </article>
+      </div>
+
+      <div class="evidence-actions">
+        <a href="./projects.html#threat-hunting" class="btn btn-secondary">Back to Case Study</a>
+        <a href="./skills.html" class="btn btn-outline">View Skills</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <nav class="footer-nav">
+      <a href="./index.html">Home</a>
+      <a href="./about.html">About</a>
+      <a href="./projects.html">Case Studies</a>
+      <a href="./skills.html">Skills</a>
+      <a href="./cv.html">CV</a>
+      <a href="./contact.html">Contact</a>
+    </nav>
+    <p>&copy; 2026 Nompilo Eugenia Mchunu | <a href="mailto:nompilomabuya@gmail.com">nompilomabuya@gmail.com</a> | Available immediately | <span id="current-date"></span></p>
+  </footer>
+</body>
+</html>

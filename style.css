@@ -888,6 +888,28 @@ section {
   color: var(--ink);
 }
 
+.evidence-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 38px;
+  margin-top: 0.35rem;
+  padding: 0.48rem 0.72rem;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--surface-alt);
+  color: var(--ink);
+  font-size: 0.84rem;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.evidence-link:hover,
+.evidence-link:focus {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+  color: var(--accent-dark);
+}
+
 .evidence-visual {
   display: grid;
   gap: 0.7rem;
@@ -1311,6 +1333,126 @@ section {
   margin-top: 1rem;
 }
 
+/* Sanitized evidence pages */
+.evidence-page {
+  padding: clamp(2.4rem, 6vw, 4rem) 0;
+}
+
+.evidence-hero {
+  max-width: 920px;
+  margin: 0 auto 1.2rem;
+  text-align: center;
+}
+
+.evidence-hero .project-meta {
+  justify-content: center;
+}
+
+.evidence-callout {
+  margin: 1rem auto 0;
+  padding: 0.9rem 1rem;
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--accent);
+  border-radius: var(--radius);
+  background: var(--surface);
+  color: var(--text);
+  font-size: 0.92rem;
+  text-align: left;
+  box-shadow: var(--shadow-soft);
+}
+
+.evidence-callout strong {
+  color: var(--ink);
+}
+
+.evidence-summary,
+.artifact-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.artifact-card {
+  padding: 1.15rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: var(--shadow-soft);
+}
+
+.artifact-card--wide {
+  margin-top: 1rem;
+}
+
+.artifact-card h2 {
+  margin: 0 0 0.65rem;
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: clamp(1.2rem, 2.5vw, 1.55rem);
+  line-height: 1.22;
+}
+
+.artifact-card p {
+  margin: 0;
+  color: var(--text);
+  font-size: 0.93rem;
+}
+
+.method-steps {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+
+.method-steps--five {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.method-steps div {
+  min-height: 154px;
+  padding: 0.85rem;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--surface-alt);
+}
+
+.method-steps span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  margin-bottom: 0.65rem;
+  border-radius: 50%;
+  background: var(--accent-soft);
+  color: var(--accent-dark);
+  font-size: 0.82rem;
+  font-weight: 900;
+}
+
+.method-steps strong {
+  display: block;
+  margin-bottom: 0.35rem;
+  color: var(--ink);
+  font-size: 0.9rem;
+  line-height: 1.25;
+}
+
+.method-steps p {
+  color: var(--muted);
+  font-size: 0.82rem;
+  line-height: 1.5;
+}
+
+.evidence-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-top: 1.4rem;
+}
+
 /* Footer */
 .site-footer {
   margin-top: 2rem;
@@ -1365,7 +1507,9 @@ section {
   .about-container,
   .contact-wrap,
   .case-layout,
-  .cv-download-panel {
+  .cv-download-panel,
+  .method-steps,
+  .method-steps--five {
     grid-template-columns: 1fr;
   }
 
@@ -1427,7 +1571,9 @@ section {
   .panel-grid,
   .badge-container,
   .cv-grid,
-  .hero-points {
+  .hero-points,
+  .evidence-summary,
+  .artifact-grid {
     grid-template-columns: 1fr;
   }
 }

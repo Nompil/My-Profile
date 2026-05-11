@@ -22,11 +22,14 @@ Nompilo is positioned as a Systems Analyst and Full-Stack Developer who can brid
 - Personal principle: "Dreams delayed are not dreams denied."
 - Evidence-grounded "Ask My Portfolio" assistant for recruiter questions
 - Dedicated cybersecurity case study for advanced threat hunting concepts, telemetry mapping and MITRE ATT&CK T1078
+- Sanitized evidence pages for the advanced threat hunting project and InspHired Connect workflow review
 
 ## Portfolio Structure
 
 - `index.html`: recruiter-facing landing page with immediate proof points and Ask My Portfolio assistant
-- `projects.html`: case studies for TrustCircle, InspHired audit, advanced threat hunting, African Bank SOP redesign and BI reporting
+- `projects.html`: case studies for TrustCircle, InspHired audit, InspHired Connect review, advanced threat hunting, African Bank SOP redesign and BI reporting
+- `threat-hunting-evidence.html`: recruiter-safe cybersecurity project evidence with names and private document details removed
+- `connect-review-evidence.html`: recruiter-safe QA and workflow review evidence with private platform details removed
 - `cv.html`: recent Word CV, ATS version, role fit and supported feedback
 - `skills.html`: technical capabilities and certifications
 - `about.html`: professional context and work style
@@ -39,6 +42,8 @@ Myprofile/
 |-- index.html
 |-- about.html
 |-- projects.html
+|-- threat-hunting-evidence.html
+|-- connect-review-evidence.html
 |-- skills.html
 |-- cv.html
 |-- contact.html

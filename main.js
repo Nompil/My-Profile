@@ -85,6 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
       sources: [
         { label: 'Security section', href: './index.html#security-heading' },
         { label: 'Threat hunting case', href: './projects.html#threat-hunting' },
+        { label: 'Threat hunting evidence', href: './threat-hunting-evidence.html' },
         { label: 'InspHired audit case', href: './projects.html#audit' },
         { label: 'Skills and certifications', href: './skills.html' }
       ]
@@ -125,6 +126,7 @@ document.addEventListener('DOMContentLoaded', () => {
       ],
       sources: [
         { label: 'InspHired audit case', href: './projects.html#audit' },
+        { label: 'Connect evidence', href: './connect-review-evidence.html' },
         { label: 'TrustCircle case study', href: './projects.html#trustcircle' }
       ]
     },
