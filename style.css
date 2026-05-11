@@ -230,7 +230,7 @@ section {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(280px, 360px);
   gap: clamp(1.5rem, 4vw, 3.5rem);
-  align-items: center;
+  align-items: start;
   min-width: 0;
   max-width: 100%;
 }
@@ -241,6 +241,7 @@ section {
   width: 100%;
   min-width: 0;
   max-width: 760px;
+  padding-top: 0.15rem;
 }
 
 .hero-eyebrow {
