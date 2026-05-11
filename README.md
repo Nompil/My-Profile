@@ -19,6 +19,7 @@ Nompilo is positioned as a Systems Analyst and Full-Stack Developer who can brid
 - JobBot recruitment workflow project showing automation, role-fit thinking and candidate journey logic
 - 500+ 3G, 4G and LTE SIM cards administered in a banking environment
 - African Bank evidence is described at a high level only because internal banking documents and screenshots are confidential
+- Task-reporting evidence is not published because it contains individual staff activity and internal department information
 - AWS, Power BI, cybersecurity, IT support and full-stack development experience
 - 9 certifications across Azure, cybersecurity, IT support, project management and systems administration, with public certificate links where available
 - PDF certificate evidence is included for Azure AI Engineer Associate, Red Hat RH124 and Cisco Introduction to Cybersecurity

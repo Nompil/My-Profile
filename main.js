@@ -138,13 +138,13 @@ document.addEventListener('DOMContentLoaded', () => {
       title: 'What BI and reporting evidence is included?',
       paragraphs: [
         'The reporting case study shows Nompilo can structure operational data, automate reporting flow and produce management-friendly views.',
-        'This supports BI Developer, Data Analyst and analyst roles where stakeholders need clear status, time and KPI visibility.'
+        'This supports BI Developer, Data Analyst and analyst roles where stakeholders need clear status, time and KPI visibility. It also shows privacy-aware handling of internal records.'
       ],
       bullets: [
         'Designed SharePoint list structures for task tracking.',
         'Connected Power Automate flows to support repeatable reporting.',
         'Built Power BI dashboards with weekly, monthly, employee, task and status views.',
-        'Prepared reporting outputs for Excel and PDF review.'
+        'Protected internal task data by keeping individual staff records and department-level details out of the public portfolio.'
       ],
       sources: [
         { label: 'Reporting case study', href: './projects.html#reporting' },
