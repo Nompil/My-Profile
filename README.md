@@ -16,6 +16,7 @@ Nompilo is positioned as a Systems Analyst and Full-Stack Developer who can brid
 
 - 100+ critical issues identified during a live platform audit
 - TrustCircle fintech platform built and deployed with 350+ passing automated tests
+- JobBot recruitment workflow project showing automation, role-fit thinking and candidate journey logic
 - 500+ 3G, 4G and LTE SIM cards administered in a banking environment
 - AWS, Power BI, cybersecurity, IT support and full-stack development experience
 - 9 certifications across Azure, cybersecurity, IT support, project management and systems administration
@@ -27,7 +28,7 @@ Nompilo is positioned as a Systems Analyst and Full-Stack Developer who can brid
 ## Portfolio Structure
 
 - `index.html`: recruiter-facing landing page with immediate proof points and Ask My Portfolio assistant
-- `projects.html`: case studies for TrustCircle, InspHired audit, InspHired Connect review, advanced threat hunting, African Bank SOP redesign and BI reporting
+- `projects.html`: case studies for TrustCircle, JobBot, InspHired audit, InspHired Connect review, advanced threat hunting, African Bank SOP redesign and BI reporting
 - `threat-hunting-evidence.html`: recruiter-safe cybersecurity project evidence with names and private document details removed
 - `connect-review-evidence.html`: recruiter-safe QA and workflow review evidence with private platform details removed
 - `cv.html`: recent Word CV, ATS version, role fit and supported feedback

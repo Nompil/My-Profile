@@ -101,11 +101,13 @@ document.addEventListener('DOMContentLoaded', () => {
       bullets: [
         'Built TrustCircle with Node.js, React, PostgreSQL, PayFast integration and AWS services.',
         'Delivered 350+ passing automated tests on TrustCircle.',
+        'Applied automation and systems thinking to JobBot in a recruitment technology context.',
         'Built Smart Irrigation Scheduler for South African farmers with crop logic, weather forecasts and custom-domain deployment.',
         'Worked with React.js, JavaScript, MySQL, third-party APIs, GitHub and Trello-managed sprints during internship work.'
       ],
       sources: [
         { label: 'TrustCircle case study', href: './projects.html#trustcircle' },
+        { label: 'JobBot case study', href: './projects.html#jobbot' },
         { label: 'Live TrustCircle', href: 'https://trustcircle.co.za' },
         { label: 'GitHub', href: 'https://github.com/Nompil' }
       ]
@@ -161,7 +163,8 @@ document.addEventListener('DOMContentLoaded', () => {
         'She combines analyst thinking, developer implementation, QA discipline, support operations, security awareness and reporting.',
         'She has numbers recruiters can remember: 100+ findings, 350+ tests, 500+ SIM assets and 9 certifications.',
         'She can speak to both technical teams and business stakeholders because her work includes systems, SOPs, dashboards and live support.',
-        'Her cybersecurity evidence is now more specific: threat hunting concepts, MITRE ATT&CK T1078, telemetry mapping, platform audit work and secure systems thinking.'
+        'Her projects also show range: TrustCircle, JobBot, Smart Irrigation, Connect review, BI reporting and threat hunting evidence.',
+        'Her cybersecurity evidence is specific: threat hunting concepts, MITRE ATT&CK T1078, telemetry mapping, platform audit work and secure systems thinking.'
       ],
       sources: [
         { label: 'Home proof points', href: './index.html' },
