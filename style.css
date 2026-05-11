@@ -2,21 +2,21 @@
 :root {
   --ink: #0f172a;
   --text: #243244;
-  --muted: #64748b;
+  --muted: #536173;
   --line: #dbe3ea;
   --surface: #ffffff;
   --surface-alt: #f6f8fb;
   --accent: #0f766e;
   --accent-dark: #0b5f59;
   --accent-soft: #d9f0ed;
-  --gold: #b7791f;
+  --gold: #7a4b05;
   --gold-soft: #fff7df;
   --danger: #9f3a38;
   --shadow: 0 14px 40px rgba(15, 23, 42, 0.08);
   --shadow-soft: 0 8px 24px rgba(15, 23, 42, 0.06);
   --radius: 8px;
-  --sans: "Inter", Arial, sans-serif;
-  --serif: "Inter", Arial, sans-serif;
+  --sans: "Segoe UI", Arial, sans-serif;
+  --serif: "Segoe UI", Arial, sans-serif;
 }
 
 * {
@@ -799,7 +799,9 @@ section {
   border-radius: 6px;
   background: var(--accent-soft);
   color: var(--accent-dark);
-  font-size: 1.1rem;
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.03em;
 }
 
 .journey-card h3,
@@ -900,7 +902,7 @@ section {
   align-items: center;
 }
 
-.flow-row span,
+.flow-row > span:not(.flow-arrow),
 .risk-row,
 .process-step,
 .dashboard-grid span,
@@ -914,9 +916,25 @@ section {
   font-weight: 800;
 }
 
-.flow-row i {
+.flow-arrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 18px;
+  min-height: 18px;
+}
+
+.flow-arrow::before {
+  content: "";
+  width: 9px;
+  height: 9px;
+  border-top: 2px solid currentColor;
+  border-right: 2px solid currentColor;
+  transform: rotate(45deg);
+}
+
+.flow-arrow {
   color: var(--accent);
-  font-size: 0.78rem;
 }
 
 .risk-row {
@@ -972,6 +990,46 @@ section {
   color: var(--accent-dark);
   font-size: 0.86rem;
   font-weight: 800;
+}
+
+.evidence-visual--hunt {
+  gap: 0.65rem;
+}
+
+.hunt-step {
+  display: grid;
+  grid-template-columns: 34px minmax(0, 1fr);
+  gap: 0.2rem 0.65rem;
+  padding: 0.7rem;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: #fff;
+}
+
+.hunt-step span {
+  grid-row: span 2;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: var(--accent-soft);
+  color: var(--accent-dark);
+  font-size: 0.78rem;
+  font-weight: 900;
+}
+
+.hunt-step strong {
+  color: var(--ink);
+  font-size: 0.86rem;
+  line-height: 1.2;
+}
+
+.hunt-step small {
+  color: var(--muted);
+  font-size: 0.78rem;
+  line-height: 1.35;
 }
 
 .project-meta {
@@ -1223,10 +1281,13 @@ section {
   font-size: 0.92rem;
 }
 
-.contact-links i {
-  width: 18px;
-  margin-top: 0.25rem;
-  color: var(--accent);
+.contact-marker {
+  flex: 0 0 auto;
+  width: 8px;
+  height: 8px;
+  margin-top: 0.58rem;
+  border-radius: 50%;
+  background: var(--accent);
 }
 
 .contact-downloads {

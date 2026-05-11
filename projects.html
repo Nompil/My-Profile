@@ -8,10 +8,8 @@
   <meta property="og:title" content="Nompilo Eugenia Mchunu | Case Studies" />
   <meta property="og:description" content="Four outcome-focused case studies showing how Nompilo analyses, documents, builds, tests and improves systems." />
   <meta property="og:image" content="profile-display.jpg" />
+  <link rel="icon" href="./profile-thumb.jpg" type="image/jpeg" />
   <title>Nompilo Eugenia Mchunu | Case Studies</title>
-  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" as="style" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link rel="stylesheet" href="./style.css" />
   <script defer src="./main.js"></script>
 </head>
@@ -61,9 +59,9 @@
           </div>
           <div class="evidence-visual" aria-label="TrustCircle architecture visual">
             <div class="visual-title">Delivery Map</div>
-            <div class="flow-row"><span>Business rules</span><i class="fas fa-arrow-right"></i><span>Data model</span></div>
-            <div class="flow-row"><span>Loan workflow</span><i class="fas fa-arrow-right"></i><span>Payment events</span></div>
-            <div class="flow-row"><span>Admin reporting</span><i class="fas fa-arrow-right"></i><span>AWS release</span></div>
+            <div class="flow-row"><span>Business rules</span><span class="flow-arrow" aria-hidden="true"></span><span>Data model</span></div>
+            <div class="flow-row"><span>Loan workflow</span><span class="flow-arrow" aria-hidden="true"></span><span>Payment events</span></div>
+            <div class="flow-row"><span>Admin reporting</span><span class="flow-arrow" aria-hidden="true"></span><span>AWS release</span></div>
             <div class="visual-metric">350+ tests passing</div>
           </div>
         </div>
@@ -93,6 +91,34 @@
             <div class="risk-row"><span>Data integrity</span><strong>High</strong></div>
             <div class="risk-row"><span>Architecture</span><strong>High</strong></div>
             <div class="visual-metric">100+ findings</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="case-study" id="threat-hunting">
+        <div class="case-header">
+          <p class="project-meta">Cybersecurity | Threat hunting | MITRE ATT&CK</p>
+          <h2>Advanced Threat Hunting: turning attacker behaviour into hunt questions</h2>
+        </div>
+        <div class="case-layout">
+          <div class="case-copy">
+            <p><strong>Context:</strong> A cybersecurity project required practical research into threat hunting concepts, including hypothesis-driven hunting, IOCs vs TTPs, telemetry mapping, MITRE ATT&CK and the Cyber Kill Chain.</p>
+            <p><strong>My role:</strong> I led the work and completed the core analysis and written deliverable. The public version is sanitized: names, class details and the original PDF are not published.</p>
+            <p><strong>Outcome:</strong> I produced a structured explanation of how proactive hunting turns attacker behaviour into testable questions, maps those questions to telemetry and reduces reliance on short-lived indicators.</p>
+            <ul class="metric-list">
+              <li>Compared IOC-based detection with TTP-focused hunting</li>
+              <li>Mapped telemetry sources including Windows Event Logs, DNS logs, proxy logs, EDR process trees and cloud audit logs</li>
+              <li>Built example hunt logic for MITRE ATT&CK T1078: Valid Accounts</li>
+              <li>Critiqued the Cyber Kill Chain and connected it to behaviour-based hunting</li>
+            </ul>
+            <p class="evidence-note">Sanitized academic evidence can be shared on request.</p>
+          </div>
+          <div class="evidence-visual evidence-visual--hunt" aria-label="Threat hunting model visual">
+            <div class="visual-title">T1078 Hunt Model</div>
+            <div class="hunt-step"><span>1</span><strong>Hypothesis</strong><small>Valid accounts may be used outside normal patterns.</small></div>
+            <div class="hunt-step"><span>2</span><strong>Telemetry</strong><small>Authentication logs, privilege changes, cloud audit events.</small></div>
+            <div class="hunt-step"><span>3</span><strong>Question</strong><small>Are accounts logging in at odd times or impossible locations?</small></div>
+            <div class="hunt-step"><span>4</span><strong>Action</strong><small>Confirm, tune detections, document risk and response path.</small></div>
           </div>
         </div>
       </article>

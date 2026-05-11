@@ -70,20 +70,21 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     {
       id: 'security',
-      patterns: ['cyber', 'security', 'risk', 'vulnerability', 'protected', 'protection', 'rbac', 'audit'],
+      patterns: ['cyber', 'security', 'risk', 'vulnerability', 'protected', 'protection', 'rbac', 'audit', 'hunting', 'mitre', 't1078'],
       title: 'What cybersecurity evidence is already visible?',
       paragraphs: [
-        'The current evidence is strongest in security-minded systems analysis, QA and operational support. Dedicated cybersecurity project case studies can be added once Nompilo finds the project material.',
-        'For now, the portfolio makes a truthful claim: she thinks about systems through access, data exposure, validation, auditability and operational risk.'
+        'The portfolio now includes a dedicated cybersecurity case study plus security-minded systems analysis, QA and operational support evidence.',
+        'The strongest public claim is grounded and specific: Nompilo can reason about attacker behaviour, access misuse, telemetry, audit findings and practical remediation.'
       ],
       bullets: [
+        'Advanced Threat Hunting project covers hypothesis-driven hunting, IOC vs TTP reasoning, telemetry mapping, MITRE ATT&CK and T1078 Valid Accounts.',
         'InspHired audit work flagged SQL injection exposure, RBAC gaps, cross-tenant leakage and workflow risks.',
         'TrustCircle includes JWT authentication, role-based access control, bcrypt, SSL/TLS and AWS deployment considerations.',
-        'African Bank support involved Active Directory security group assignment, Cisco ISE checks, Mimecast and service-provider escalation processes.',
-        'The portfolio frames cybersecurity as a practical system quality: a system must work, protect data and remain auditable.'
+        'African Bank support involved Active Directory security group assignment, Cisco ISE checks, Mimecast and service-provider escalation processes.'
       ],
       sources: [
         { label: 'Security section', href: './index.html#security-heading' },
+        { label: 'Threat hunting case', href: './projects.html#threat-hunting' },
         { label: 'InspHired audit case', href: './projects.html#audit' },
         { label: 'Skills and certifications', href: './skills.html' }
       ]
@@ -158,7 +159,7 @@ document.addEventListener('DOMContentLoaded', () => {
         'She combines analyst thinking, developer implementation, QA discipline, support operations, security awareness and reporting.',
         'She has numbers recruiters can remember: 100+ findings, 350+ tests, 500+ SIM assets and 9 certifications.',
         'She can speak to both technical teams and business stakeholders because her work includes systems, SOPs, dashboards and live support.',
-        'She is honest about cybersecurity: current evidence is security-minded systems work, with dedicated cybersecurity projects to be added when available.'
+        'Her cybersecurity evidence is now more specific: threat hunting concepts, MITRE ATT&CK T1078, telemetry mapping, platform audit work and secure systems thinking.'
       ],
       sources: [
         { label: 'Home proof points', href: './index.html' },

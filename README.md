@@ -21,11 +21,12 @@ Nompilo is positioned as a Systems Analyst and Full-Stack Developer who can brid
 - 9 certifications across Azure, cybersecurity, IT support, project management and systems administration
 - Personal principle: "Dreams delayed are not dreams denied."
 - Evidence-grounded "Ask My Portfolio" assistant for recruiter questions
+- Dedicated cybersecurity case study for advanced threat hunting concepts, telemetry mapping and MITRE ATT&CK T1078
 
 ## Portfolio Structure
 
 - `index.html`: recruiter-facing landing page with immediate proof points and Ask My Portfolio assistant
-- `projects.html`: case studies for TrustCircle, InspHired audit, African Bank SOP redesign and BI reporting
+- `projects.html`: case studies for TrustCircle, InspHired audit, advanced threat hunting, African Bank SOP redesign and BI reporting
 - `cv.html`: recent Word CV, ATS version, role fit and supported feedback
 - `skills.html`: technical capabilities and certifications
 - `about.html`: professional context and work style
@@ -54,6 +55,8 @@ Myprofile/
 Open `index.html` in a browser. The site is static and does not require a build step.
 
 The portfolio is GitHub Pages-ready because it uses static HTML, CSS, JavaScript and local assets only. To publish updates, push these files to the GitHub repository connected to the live profile and make sure GitHub Pages is serving the main branch or selected deployment branch.
+
+Custom domain note: add a `CNAME` file only after the final domain is chosen and DNS is configured with the domain provider.
 
 ## Contact
 
